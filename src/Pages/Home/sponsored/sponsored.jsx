@@ -1,6 +1,7 @@
 import React from 'react';
 import Marquee from 'react-fast-marquee';
 import WhyChooseUs from './WhyChooseUs';
+import Merchant from './Merchant';
 
 const Sponsored = () => {
   const logos = [
@@ -58,6 +59,10 @@ const Sponsored = () => {
         <div className="border-t-2 border-dashed border-primary/20 w-full"></div>
       </div>
       <WhyChooseUs />
+      <div className="max-w-7xl mx-auto px-6 py-10">
+        <div className="border-t-2 border-dashed border-primary/20 w-full"></div>
+      </div>
+      <Merchant />
     </div>
   );
 };

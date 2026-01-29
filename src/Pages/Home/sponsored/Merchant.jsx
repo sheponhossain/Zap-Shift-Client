@@ -1,5 +1,6 @@
 import React from 'react';
-import illustration from '../../../assets/cta-box-illustration.png'; // Illustration image-ta ekhane nio
+import illustration from '../../../assets/location-merchant.png'; // Illustration image-ta ekhane nio
+import Buttons from '../../../Components/Button/Buttons';
 
 const Merchant = () => {
   return (
@@ -30,12 +31,12 @@ const Merchant = () => {
           </p>
 
           <div className="flex flex-wrap gap-4">
-            <button className="bg-secondary text-primary px-8 py-4 rounded-full font-bold text-base hover:opacity-90 transition-all">
+            <Buttons className="hover:text-white rounded-3xl">
               Become a Merchant
-            </button>
-            <button className="border-2 border-secondary text-secondary px-8 py-4 rounded-full font-bold text-base hover:bg-secondary hover:text-primary transition-all">
+            </Buttons>
+            <Buttons className="hover:text-white rounded-3xl">
               Earn with ZapShift Courier
-            </button>
+            </Buttons>
           </div>
         </div>
         <div className="relative z-10 w-full md:w-1/3 flex justify-center md:justify-end">
