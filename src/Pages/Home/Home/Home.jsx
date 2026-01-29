@@ -3,6 +3,7 @@ import Banner from '../Banner/Banner';
 import Works from '../Works/Works';
 import { useLoaderData } from 'react-router';
 import OurServices from '../OurServices/OurServices';
+import Sponsored from '../sponsored/sponsored';
 
 const Home = () => {
   const workData = useLoaderData();
@@ -11,6 +12,7 @@ const Home = () => {
       <Banner />
       <Works workData={workData} />
       <OurServices />
+      <Sponsored />
     </>
   );
 };
