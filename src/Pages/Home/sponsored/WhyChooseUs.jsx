@@ -1,5 +1,6 @@
 import React from 'react';
-
+import LiveParcelTracking from '../../../assets/live-tracking.png';
+import SafeDelivery from '../../../assets/safe-delivery.png';
 const WhyChooseUs = () => {
   const features = [
     {
@@ -7,21 +8,21 @@ const WhyChooseUs = () => {
       title: 'Live Parcel Tracking',
       description:
         "Stay updated in real-time with our live parcel tracking feature. From pickup to delivery, monitor your shipment's journey.",
-      image: 'https://i.ibb.co.com/7JmYmYm/tracking.png',
+      image: LiveParcelTracking,
     },
     {
       id: 2,
       title: '100% Safe Delivery',
       description:
         'We ensure your parcels are handled with the utmost care and delivered securely to their destination. Reliable and damage-free.',
-      image: 'https://i.ibb.co.com/mRKXmXm/safe.png',
+      image: SafeDelivery,
     },
     {
       id: 3,
       title: '24/7 Call Center Support',
       description:
         'Our dedicated support team is available around the clock to assist you with any questions or delivery concerns anytime.',
-      image: 'https://i.ibb.co.com/vXYmXm/support.png',
+      image: SafeDelivery,
     },
   ];
 
