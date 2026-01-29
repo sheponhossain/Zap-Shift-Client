@@ -11,42 +11,42 @@ const OurServices = () => {
   }, []);
 
   return (
-    <div className="bg-primary py-20 px-6 rounded-3xl">
-      <div className="max-w-7xl mx-auto text-center">
-        <div className="mb-16">
-          <h2 className="text-white text-4xl md:text-5xl font-black mb-6">
+    <div className="bg-primary py-12 px-6 md:px-16 rounded-[40px] max-w-7xl mx-auto text-center my-10 font-[Urbanist]">
+      <div>
+        <div className="mb-10">
+          <h2 className="text-white text-3xl md:text-4xl font-black mb-3">
             Our Services
           </h2>
-          <p className="text-gray-300 max-w-3xl mx-auto text-sm md:text-base leading-relaxed">
+          <p className="text-gray-300 max-w-2xl mx-auto text-sm opacity-80 leading-snug">
             Enjoy fast, reliable parcel delivery with real-time tracking and
-            zero hassle. From personal packages to business shipments — we
-            deliver on time, every time.
+            zero hassle. From personal packages to business shipments.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <div
               key={service.id || index}
               className={`
-                p-10 rounded-[40px] flex flex-col items-center text-center transition-all duration-300
+                p-6 md:p-8 rounded-[35px] flex flex-col items-center text-center transition-all duration-300
                 ${index === 1 ? 'bg-secondary text-primary' : 'bg-white text-primary'}
-                hover:scale-[1.02] cursor-pointer shadow-xl
+                hover:scale-[1.02] cursor-pointer shadow-lg min-h-[260px] justify-center
               `}
             >
-              <div className="w-20 h-20 bg-blue-50 rounded-full flex items-center justify-center mb-6 overflow-hidden">
+              <div className="w-14 h-14 bg-blue-50/50 rounded-full flex items-center justify-center mb-4 overflow-hidden">
                 <img
-                  src={
-                    servicelogo || 'https://i.ibb.co/vzPRm9M/service-icon.png'
-                  }
+                  src={servicelogo}
                   alt={service.title}
-                  className="w-12 h-12 object-contain"
+                  className="w-9 h-9 object-contain"
                 />
               </div>
-              <h3 className="text-2xl font-black mb-4 leading-tight px-4">
+
+              <h3 className="text-xl font-black mb-2 leading-tight">
                 {service.title}
               </h3>
+
               <p
-                className={`text-sm leading-relaxed ${index === 1 ? 'text-primary/80' : 'text-gray-500'}`}
+                className={`text-[13px] leading-relaxed px-4 ${index === 1 ? 'text-primary/80' : 'text-gray-500'}`}
               >
                 {service.description}
               </p>
